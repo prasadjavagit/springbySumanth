@@ -5,5 +5,10 @@
     <bean id="person" class="info.inetsolv.beans.Person">
         <property name="pid"    value="100"/>
         <property name="name"   value="Prasad"/>
+        <property name="address"    ref="addr"/>
+    </bean>
+    <bean id="addr" class="info.inetsolv.beans.Address">
+        <property name="street" value="SR Nagar"/>
+        <property name="city" value="Hyderabad"/>
     </bean>
 </beans>
